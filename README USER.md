@@ -9,7 +9,7 @@
 {
   "fullname": "Yanto Wardanto",
   "username": "Yanto",
-  "phone": 08111111111,
+  "phone": "08111111111",
   "email": "yanto@gmail.com",
   "password": "Yanto123",
   "confirmPassword": "Yanto123"
@@ -65,17 +65,10 @@
   "message": "Invalid username or password"
 }
 ``` 
-## Response Error — 404 Not Found
-```json
-{
-  "status": "error",
-  "message": "User not found, please register first"
-}
-```
 ---
 
 # Get Data Booking User
-**Endpoint:** `/api/user/booking`  
+**Endpoint:** `/api/user/bookings`  
 **Method:** `GET`
 
 ### Header
@@ -111,7 +104,7 @@ Authorization: Bearer JWT_Token_User
 ---
 
 # Update Data Booking User
-**Endpoint:** `/api/user/booking/{id}`  
+**Endpoint:** `/api/user/bookings/{id}`  
 **Method:** `PATCH`
 
 ### Header
@@ -147,7 +140,7 @@ Authorization: Bearer JWT_Token_User
 ```json
 {
   "status": "error",
-  "message": "Input tidak valid"
+  "message": "Invalid input"
 }
 ```
 ## Response Error — 401 Unauthorized
@@ -172,8 +165,8 @@ Authorization: Bearer JWT_Token_User
 }
 ```
 ---
-## Cancel Booking User
-**Endpoint:** `/api/user/booking/{id}/cancel`  
+# Cancel Booking User
+**Endpoint:** `/api/user/bookings/{id}/cancel`  
 **Method:** `PATCH`
 
 ### Header
