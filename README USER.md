@@ -9,7 +9,7 @@
 {
   "fullname": "Yanto Wardanto",
   "username": "Yanto",
-  "handphone": 08111111111,
+  "phone": 08111111111,
   "email": "yanto@gmail.com",
   "password": "Yanto123",
   "confirmPassword": "Yanto123"
@@ -19,14 +19,14 @@
 ``` json 
 {
   "status": "success",
-  "message": "Pendaftaran berhasil, silahkan login"
+  "message": "Registration successful, please login"
 }
 ``` 
 ## Response Error — 400 Bad Request
 ``` json 
 {
   "status": "error",
-  "message": "Pendaftaran gagal, username atau password tidak boleh kosong "
+  "message": "Registration failed, username or password cannot be empty"
 }
 ``` 
 
@@ -69,7 +69,7 @@
 ```json
 {
   "status": "error",
-  "message": "User tidak ditemukan, Silahkan Register Terlebih Dahulu"
+  "message": "User not found, please register first"
 }
 ```
 ---
@@ -93,7 +93,7 @@ Authorization: Bearer JWT_Token_User
       "status": "CONFIRMED",
       "service": {
         "id": 1,
-        "serviceName": "Ganti Oli",
+        "serviceName": "Oil Change",
         "price": 50000,
         "duration": 30
       }
@@ -105,7 +105,7 @@ Authorization: Bearer JWT_Token_User
 ```json
 {
   "status": "error",
-  "message": "Data tidak ditemukan, silahkan hubungi admin"
+  "message": "Data not found, please contact admin"
 }
 ```
 ---
@@ -135,7 +135,7 @@ Authorization: Bearer JWT_Token_User
     "status": "CONFIRMED",
     "service": {
       "id": 1,
-      "serviceName": "Ganti Oli",
+      "serviceName": "Oil Change",
       "price": 50000,
       "duration": 30
     }
