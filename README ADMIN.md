@@ -1,4 +1,4 @@
-# Documentation RESTFull API System Booking Service Bike Admin
+# Documentation RESTFul API System Booking Service Bike Admin
 
 # Login
 **Endpoint:** `/api/auth/login`  
@@ -31,10 +31,10 @@
 ``` 
 ---
 # Create Booking (Admin)
-**Endpoint:** `/api/admin/booking`  
+**Endpoint:** `/api/admin/bookings`  
 **Method:** `POST`
 
-## Header
+### Header
 Authorization: Bearer ADMIN_JWT_TOKEN
 
 
@@ -58,7 +58,7 @@ Authorization: Bearer ADMIN_JWT_TOKEN
     "status": "CONFIRMED",
     "service": {
       "id": 1,
-      "serviceName": "Ganti Oli",
+      "serviceName": "Oil Change ",
       "price": 50000,
       "duration": 30
     }
@@ -85,7 +85,7 @@ Authorization: Bearer ADMIN_JWT_TOKEN
 **Endpoint:** `/api/admin/booking`  
 **Method:** `GET`
 
-## Header
+### Header
 Authorization: Bearer ADMIN_JWT_TOKEN
 
 
@@ -125,7 +125,7 @@ Authorization: Bearer ADMIN_JWT_TOKEN
 
 ---
 ## Get Booking by ID (Admin)
-**Endpoint:** `/api/admin/booking/{bookingId}`  
+**Endpoint:** `/api/admin/bookings/{bookingId}`  
 **Method:** `GET`
 
 ### Header
@@ -187,8 +187,13 @@ Authorization: Bearer ADMIN_JWT_TOKEN
 ```
 ---
 ## Update Booking Status to CANCELED (Admin)
-**Endpoint:** `/api/admin/booking/{bookingId}`  
-**Method:** `PATCH`
+**Endpoint:** `/api/admin/bookings/{bookingId}`  
+**Method:** `PATCH`   
+Allowed status values:
+- CONFIRMED
+- COMPLETED
+- CANCELED
+
 
 ### Header
 Authorization: Bearer ADMIN_JWT_TOKEN
@@ -229,8 +234,13 @@ Authorization: Bearer ADMIN_JWT_TOKEN
 ```
 ---
 ## Update Booking Status to COMPLETED (Admin)
-**Endpoint:** `/api/admin/booking/{bookingId}`  
-**Method:** `PATCH`
+**Endpoint:** `/api/admin/bookings/{bookingId}`  
+**Method:** `PATCH`   
+
+Allowed status values:
+- CONFIRMED
+- COMPLETED
+- CANCELED
 
 ### Header
 Authorization: Bearer ADMIN_JWT_TOKEN
@@ -278,7 +288,7 @@ Authorization: Bearer ADMIN_JWT_TOKEN
 
 ---
 ## Delete Booking (Admin)
-**Endpoint:** `/api/admin/booking/{bookingId}`  
+**Endpoint:** `/api/admin/bookings/{bookingId}`  
 **Method:** `DELETE`
 
 ### Header
