@@ -285,7 +285,7 @@ Authorization: Bearer ADMIN_JWT_TOKEN
 Authorization: Bearer ADMIN_JWT_TOKEN
 
 ### Request
-> Not use request body
+{}
 
 ---
 
