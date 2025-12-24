@@ -319,4 +319,36 @@ Authorization: Bearer ADMIN_JWT_TOKEN
 }
 ```
 ---
+## Logout
+**Endpoint:** `/api/auth/logout`  
+**Method:** `POST`
+
+### Header
+Authorization: Bearer JWT_Token
+
+### Request
+```json
+{}
+```
+
+### Response Success - 200 OK
+```json
+{
+  "status": "success",
+  "message": "Logout successful"
+}
+```
+
+### Response Error - 401 Unauthorized
+```json
+{
+  "status": "error",
+  "message": "Unauthorized"
+}
+```
+
+
+
+
+
 
