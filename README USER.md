@@ -1,4 +1,4 @@
-# Documentation RESTFull API System Booking Service Bike User
+# Documentation RESTful API System Booking Service Bike User
 
 # Register
 **Endpoint:** `/api/auth/register`  
