@@ -1,4 +1,4 @@
-# Documentation RESTFul API System Booking Service Bike Admin
+# Documentation RESTful API System Booking Service Bike Admin
 
 # Login
 **Endpoint:** `/api/auth/login`  
@@ -82,7 +82,7 @@ Authorization: Bearer ADMIN_JWT_TOKEN
 ```
 ---
 # Get All Booking (Admin)
-**Endpoint:** `/api/admin/booking`  
+**Endpoint:** `/api/admin/bookings`  
 **Method:** `GET`
 
 ### Header
@@ -263,7 +263,7 @@ Authorization: Bearer ADMIN_JWT_TOKEN
     "status": "COMPLETED",
     "service": {
       "id": 1,
-      "serviceName": "Ganti Oli",
+      "serviceName": "Oil Change",
       "price": 50000,
       "duration": 30
     }
