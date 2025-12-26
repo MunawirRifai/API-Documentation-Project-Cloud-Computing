@@ -145,7 +145,8 @@ Authorization: Bearer JWT_Token_User
     {
       "bookingId": 15,
       "bookingDate": "2025-01-20",
-      "status": "CONFIRMED",
+      "bookingTime": "10:00",
+      "status": "PENDING",
       "service": {
         "id": 1,
         "serviceName": "Oil Change",
