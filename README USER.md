@@ -66,6 +66,37 @@
 }
 ```
 ---
+
+# Logout (User)
+**Endpoint:** `/api/auth/logout`  
+**Method:** `POST`
+
+### Header
+Authorization: Bearer JWT_Token_User
+
+
+### Request
+```json
+{}
+```
+
+## Response Success - 200 OK
+```json
+{
+  "status": "success",
+  "message": "Logout successful"
+}
+```
+
+## Response Error - 401 Unauthorized
+```json
+{
+  "status": "error",
+  "message": "Unauthorized"
+}
+```
+
+---
 # Create Booking (User)
 **Endpoint:** `/api/user/bookings`  
 **Method:** `POST`
@@ -188,6 +219,7 @@ Authorization: Bearer JWT_Token_User
   "data": {
     "bookingId": 10,
     "bookingDate": "2025-01-30",
+    "bookingTime": "10:00",
     "status": "CONFIRMED",
     "service": {
       "id": 1,
@@ -280,33 +312,4 @@ Authorization: Bearer JWT_Token_User
 ```
 
 
----
 
-# Logout (User)
-**Endpoint:** `/api/auth/logout`  
-**Method:** `POST`
-
-### Header
-Authorization: Bearer JWT_Token_User
-
-
-### Request
-```json
-{}
-```
-
-## Response Success - 200 OK
-```json
-{
-  "status": "success",
-  "message": "Logout successful"
-}
-```
-
-## Response Error - 401 Unauthorized
-```json
-{
-  "status": "error",
-  "message": "Unauthorized"
-}
-```
