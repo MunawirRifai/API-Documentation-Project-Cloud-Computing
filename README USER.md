@@ -220,7 +220,7 @@ Authorization: Bearer JWT_Token_User
     "bookingId": 10,
     "bookingDate": "2025-01-30",
     "bookingTime": "10:00",
-    "status": "CONFIRMED",
+    "status": "PENDING",
     "service": {
       "id": 1,
       "serviceName": "Oil Change",
@@ -249,7 +249,7 @@ Authorization: Bearer JWT_Token_User
 ```json
 {
   "status": "error",
-  "message": "Anda tidak memiliki akses untuk mengubah data ini"
+  "message": "You are not allowed to update this booking"
 }
 ```
 ## Response Error — 404 Not Found
