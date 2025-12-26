@@ -1,6 +1,6 @@
 # Documentation RESTful API System Booking Service Bike User
 
-# Register
+# Register (User)
 **Endpoint:** `/api/auth/register`  
 **Method:** `POST`
 
@@ -33,7 +33,7 @@
 ---
 
 
-# Login
+# Login (User)
 **Endpoint:** `/api/auth/login`  
 **Method:** `POST`
 
@@ -129,7 +129,7 @@ Authorization: Bearer JWT_TOKEN
 
 ---
 
-# Get Data Booking User
+# Get Data Booking (User)
 **Endpoint:** `/api/user/bookings`  
 **Method:** `GET`
 
@@ -165,7 +165,7 @@ Authorization: Bearer JWT_Token_User
 ```
 ---
 
-# Update Data Booking User
+# Update Data Booking (User)
 **Endpoint:** `/api/user/bookings/{id}`  
 **Method:** `PATCH`
 
@@ -227,7 +227,7 @@ Authorization: Bearer JWT_Token_User
 }
 ```
 ---
-# Cancel Booking User
+# Cancel Booking (User)
 **Endpoint:** `/api/user/bookings/{id}/cancel`  
 **Method:** `PATCH`
 
@@ -281,7 +281,7 @@ Authorization: Bearer JWT_Token_User
 
 ---
 
-# Logout User
+# Logout (User)
 **Endpoint:** `/api/auth/logout`  
 **Method:** `POST`
 
