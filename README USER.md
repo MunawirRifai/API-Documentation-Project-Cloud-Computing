@@ -143,7 +143,7 @@ Authorization: Bearer JWT_Token_User
   "message": "Booking date retrieved successfully",
   "data": [
     {
-      "bookingId": 10,
+      "bookingId": 15,
       "bookingDate": "2025-01-20",
       "status": "CONFIRMED",
       "service": {
