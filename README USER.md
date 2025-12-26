@@ -66,7 +66,7 @@
 }
 ```
 ---
-## Create Booking (User)
+# Create Booking (User)
 **Endpoint:** `/api/user/bookings`  
 **Method:** `POST`
 
