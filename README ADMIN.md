@@ -58,7 +58,7 @@ Authorization: Bearer ADMIN_JWT_TOKEN
     "status": "CONFIRMED",
     "service": {
       "id": 1,
-      "serviceName": "Oil Change ",
+      "serviceName": "Oil Change",
       "price": 50000,
       "duration": 30
     }
