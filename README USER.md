@@ -64,7 +64,69 @@
   "status": "error",
   "message": "Invalid username or password"
 }
-``` 
+```
+---
+## Create Booking (User)
+**Endpoint:** `/api/user/bookings`  
+**Method:** `POST`
+
+### Header
+Authorization: Bearer JWT_TOKEN   
+
+### Request
+```json
+{
+  "serviceId": 1,
+  "bookingDate": "2025-01-20",
+  "bookingTime": "10:00"
+}
+```
+
+## Response Success — 201 Created
+```json
+{
+  "status": "success",
+  "message": "Booking created successfully",
+  "data": {
+    "bookingId": 15,
+    "bookingDate": "2025-01-20",
+    "bookingTime": "10:00",
+    "status": "PENDING",
+    "service": {
+      "id": 1,
+      "serviceName": "Oil Change",
+      "price": 50000,
+      "duration": 30
+    }
+  }
+}
+```
+## Response Error — 400 Bad Request
+```json
+{
+  "status": "error",
+  "message": "Invalid booking data"
+}
+```
+## Response Error — 401 Unauthorized
+```json
+{
+  "status": "error",
+  "message": "Unauthorized"
+}
+```
+
+## Response Error — 404 Not Found
+```json
+{
+  "status": "error",
+  "message": "Service not found"
+}
+```
+
+
+
+
 ---
 
 # Get Data Booking User
